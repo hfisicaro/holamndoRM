@@ -3,33 +3,35 @@ Test drive R Markdown
 hfisicaro
 2023-01-05
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+Una única sentencia.
 
 ``` r
-summary(cars)
+library(nycflights13)
+library(dplyr) 
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+    ## 
+    ## Attaching package: 'dplyr'
 
-## Including Plots
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
 
-You can also embed plots, for example:
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
 
-![](test_RM_files/figure-gfm/pressure-1.png)<!-- -->
+``` r
+library(dplyr)
+library(ggplot2)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+alaska_flights <- flights %>%
+  filter(carrier == "AS") 
+
+ggplot(data = alaska_flights, mapping = aes(x = dep_delay, y = arr_delay)) +
+  geom_point(alpha = 0.2)
+```
+
+    ## Warning: Removed 5 rows containing missing values (`geom_point()`).
+
+![](test_RM_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
