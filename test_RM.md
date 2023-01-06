@@ -35,3 +35,11 @@ ggplot(data = alaska_flights, mapping = aes(x = dep_delay, y = arr_delay)) +
     ## Warning: Removed 5 rows containing missing values (`geom_point()`).
 
 ![](test_RM_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+``` r
+ggplot(data = alaska_flights, mapping = aes(x = dep_delay, y = arr_delay)) +  geom_jitter(width = 30, height = 30) 
+```
+
+    ## Warning: Removed 5 rows containing missing values (`geom_point()`).
+
+![](test_RM_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
