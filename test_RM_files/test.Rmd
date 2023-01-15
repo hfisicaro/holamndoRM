@@ -1,0 +1,19 @@
+---
+title: "Hello R Markdown"
+author: "Horacio"
+date: "13-01-2023"
+output: html_document
+---
+
+Este es un párrafo en un documento R Markdown
+
+Lo que sigue es un code chunk
+
+```{r}
+fit = lm(dist ~ speed, data = cars)
+b   = coef(fit)
+plot(cars)
+abline(fit)
+```
+
+La pendiente de regresión es `r b[1]`.
