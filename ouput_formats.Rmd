@@ -8,16 +8,14 @@ output:
     theme: !expr sample(c("yeti", "united", "lumen"), 1)
 ---
 
-Este es un párrafo en un documento R Markdown
+Esta es una línea con una palabra en _itálica_.
 
-Lo que sigue es un code chunk
+Esta es una línea con una palabra en **negrita**.
 
-```{r}
-fit = lm(dist ~ speed, data = cars)
-b   = coef(fit)
-plot(cars)
-abline(fit)
-```
+H~3~PO~4~
 
-La pendiente de regresión es `r b[2]`.
+Esta es una línea con código _inline_ `installed.packages()`
 
+Este es un vínculo: [RStudio](https://posit.co)
+
+Esta es una ^[Nota al pie.]
