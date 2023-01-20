@@ -8,14 +8,31 @@ output:
     theme: !expr sample(c("yeti", "united", "lumen"), 1)
 ---
 
-Esta es una línea con una palabra en _itálica_.
+Esta es una línea con una palabra en *itálica*.
 
 Esta es una línea con una palabra en **negrita**.
 
 H~3~PO~4~
 
-Esta es una línea con código _inline_ `installed.packages()`
+Esta es una línea con código *inline* `installed.packages()`
 
 Este es un vínculo: [RStudio](https://posit.co)
 
-Esta es una ^[Nota al pie.]
+Esta es una [^1]
+
+[^1]: Nota al pie.
+
+# Encabezado primer nivel
+
+## Encabezado segundo nivel
+
+### Encabezado tercer nivel
+
+# Prefacio {-}
+
+- Un ítem
+- Un ítem
+- Un ítem
+  - Un ítem más
+  - Un ítem más
+  - Un ítem más
