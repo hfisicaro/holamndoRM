@@ -36,3 +36,33 @@ Esta es una [^1]
   - Un ítem más
   - Un ítem más
   - Un ítem más
+    - Otro ítem más
+
+
+> "I thoroughly disapprove of duels. If a man should challenge me,
+  I would take him kindly and forgivingly by the hand and lead him
+  to a quiet place and kill him."
+>
+> --- Mark Twain
+
+> "I thoroughly disapprove of duels. If a man should challenge me,
+  I would take him kindly and forgivingly by the hand and lead him
+  to a quiet place and kill him."
+>
+> --- Mark Twain
+
+```
+This text is displayed verbatim / preformatted
+```
+
+    This text is displayed verbatim / preformatted
+    
+In R, the character
+# indicates a comment.
+
+The result of 5
+- 3 is 2.
+
+$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$
+
+
