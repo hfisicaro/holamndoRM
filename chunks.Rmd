@@ -1,5 +1,8 @@
 ```{r chunk_1, echo=TRUE, results='hide', fig.height=4, }
-
-
+# Ejecutar el código si la fecha es mayor que 01-01-2023
+hacerlo = Sys.Date() > "2023-01-01"
+```
+```{r, eval = hacerlo}
+rnorm(100)
 ```
 
