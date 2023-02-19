@@ -5,4 +5,15 @@ hacerlo = Sys.Date() > "2023-01-01"
 ```{r, eval = hacerlo}
 rnorm(100)
 ```
+```{r}
+x = 5 # radio de un círculo.
+```
+Con un círculo de radio `r x`,
+su área es `r pi * x^2`.
+
+```{r}
+plot(cars, pch = 18)
+```
+
+
 
